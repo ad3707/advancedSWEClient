@@ -36,7 +36,7 @@ document.addEventListener("click", function (event) {
   //GET REQUEST FOR ALL QUESTIONS
   document.addEventListener("click", function (event) {
     // Checking if the button was clicked
-    if (!event.target.matches("#button")) return;
+    if (!event.target.matches("#get_all_questions_button")) return;
   
     fetch("localhost:8080/questions")
       .then((response) => response.json())

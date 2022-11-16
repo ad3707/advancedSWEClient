@@ -11,7 +11,6 @@
 
 <div class="row">
     <div class="col-12 header">
-    Update Question
     </div>
 </div>
 
@@ -20,7 +19,8 @@
     <h2> Quiz </h2>
 </div>
 
-<form id = "quiz">
+<form id = "update">
+    <h2> Update Question</h2>
   <label for="question_id">Question ID:</label><br>
   <input type="text" id="question_id" name="question_id"><br>
   <label for="question_name">Question:</label><br>
@@ -38,10 +38,21 @@
 
   <div class="row3">
     <div class="buttons">
-        <button class = "button" type="button"> <a href="get_quiz.html">Update</a></button>
+        <button class = "button" type="get_all_questions_button"> <a href="get_quiz.html"> Update </a></button>
     </div>
 </div>
+</form>
 
+<form id = "delete">
+    <h2> Delete Question </h2>
+    <label for="question_id">Question ID:</label><br>
+    <input type="text" id="question_id" name="question_id"><br>
+  
+    <div class="row3">
+      <div class="buttons">
+          <button class = "button" type="delete_question_button"> <a href="get_quiz.html"> Delete </a></button>
+      </div>
+  </div>
 </form>
 
 
