@@ -4,7 +4,7 @@ document.addEventListener("click", function (event) {
     if (!event.target.matches("#create_question_button")) return;
     const created_question = {
         name: document.getElementById("question_name"),
-        a: document.getElementById("ans1"),
+        a: "Aditi",
         b: document.getElementById("ans2"),
         c: document.getElementById("ans3"),
         d: document.getElementById("ans4"),
@@ -22,16 +22,13 @@ document.addEventListener("click", function (event) {
     fetch('localhost:8080/questions', options)
     .then((data) => renderQuestion(data))
     .then(data => {
-      if (!data.ok) {
-        throw Error(data.status);
-       }
        return data.json();
       }).then(update => {
       console.log(update);
       }).catch(e => {
       console.log(e);
       });
-      
+    //"proxy": "http://localhost:8080",TO package.json
   });
 
   //GET REQUEST FOR ALL QUESTIONS
@@ -46,7 +43,7 @@ document.addEventListener("click", function (event) {
   
   function renderQuestion(data) {
     const name = document.getElementById("question_name");
-    const a = document.getElementById("ans1");
+    const a = "Aditi"
     const b = document.getElementById("ans2");
     const c = document.getElementById("ans3");
     const d = document.getElementById("ans4");
