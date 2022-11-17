@@ -1,7 +1,5 @@
 body {
     background-color:white;
-    
-
 }
 
 .title {
@@ -37,7 +35,6 @@ button {
 .buttons {
     text-align: center;
     margin-top: 50px;
-
 }
 
 .text-center {
@@ -81,7 +78,6 @@ button {
     border-radius: 20px;
     float: right;
     margin-right: 200px;
-
 }
 
 
@@ -96,7 +92,6 @@ button {
     border-radius: 20px;
     float: right;
     margin-right: 200px;
-
 }
 
 #display_quiz {

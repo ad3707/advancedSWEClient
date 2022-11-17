@@ -1,7 +1,7 @@
 
 //POST REQUEST FOR ADDING QUESTION
 document.addEventListener("click", function (event) {
-    if (!event.target.matches("#button")) return;
+    if (!event.target.matches("#create_question_button")) return;
     const created_question = {
         name: document.getElementById("question_name"),
         a: document.getElementById("ans1"),
@@ -20,7 +20,8 @@ document.addEventListener("click", function (event) {
         };
 
     fetch('localhost:8080/questions', options)
-  .then(data => {
+    .then((data) => renderQuestion(data))
+    .then(data => {
       if (!data.ok) {
         throw Error(data.status);
        }
@@ -30,8 +31,8 @@ document.addEventListener("click", function (event) {
       }).catch(e => {
       console.log(e);
       });
+      
   });
-
 
   //GET REQUEST FOR ALL QUESTIONS
   document.addEventListener("click", function (event) {
@@ -50,7 +51,6 @@ document.addEventListener("click", function (event) {
     const c = document.getElementById("ans3");
     const d = document.getElementById("ans4");
     const answer = document.getElementById("answer");
-    setup.innerHTML = data.setup;
     display_name.innerHTML = data.name;
     display_a.innerHTML = data.a;
     display_b.innerHTML = data.b;
