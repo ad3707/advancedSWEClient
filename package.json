@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ad3707/advancedSWEClient/issues"
   },
-  "homepage": "https://github.com/ad3707/advancedSWEClient#readme"
+  "homepage": "https://github.com/ad3707/advancedSWEClient#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
 }
