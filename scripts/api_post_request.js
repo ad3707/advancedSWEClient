@@ -13,8 +13,6 @@ document.addEventListener("click", function (event) {
         answer: document.getElementById("answer").value,
         };
   
-        console.log(JSON.stringify(created_question));
-
         const headers = {'Content-Type':'application/json',
                     'Access-Control-Allow-Origin':'*',
                     'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
@@ -33,19 +31,6 @@ document.addEventListener("click", function (event) {
       //  return data.json();
       })
   });
-
-  //GET REQUEST FOR ALL QUESTIONS
-  document.addEventListener("click", function (event) {
-    if (!event.target.matches("#get_all_questions_button")) return;
-  
-    fetch("localhost:8080/questions")
-      .then((response) => response.json())
-      .then((data) => renderQuestion(data))
-      return response.json();
-  });
-  
-  
-  
   
   function renderQuestion(data) {
     console.log(data);
