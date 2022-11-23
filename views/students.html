@@ -1,0 +1,63 @@
+<html>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<body>
+
+<ul>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="students.html"> Class Info </a></li>
+    <li><a href="create_quiz.html"> Create Quiz </a></li>
+</ul>
+    
+
+<div class="row">
+    <div class="col-12 header">
+    </div>
+</div>
+
+<div id = "display_students">
+    <h2> All Students </h2>
+
+    <div class="buttons">
+      <button class = "button" id= "get_all_users_button" type="get_all_users_button"> See All Students </button>
+  </div>
+
+</div>
+
+<form id = "update">
+    <h2> Update Student</h2>
+  <label for="user_id">Student ID:</label><br>
+  <input type="text" id="user_id" name="user_id"><br>
+  <label for="user_name">Name:</label><br>
+  <input type="text" id="user_name" name="user_name"><br>
+  <label for="attempted">Attempted:</label><br>
+  <input type="text" id="attempted" name="attempted"><br>
+  <label for="correct">Correct:</label><br>
+  <input type="text" id="correct" name="correct"><br>
+
+  <div class="row3">
+    <div class="buttons">
+        <button class = "button" type="get_all_users_button"> Update </button>
+    </div>
+</div>
+</form>
+
+<form id = "delete">
+    <h2> Delete Student </h2>
+    <label for="user_id">Student ID:</label><br>
+    <input type="text" id="user_id" name="user_id"><br>
+  
+    <div class="row3">
+      <div class="buttons">
+        <button class = "button" type="get_all_users_button"> Delete </button>
+    </div>
+  </div>
+</form>
+
+
+
+</body>
+<script type="text/javascript" src="/scripts/api_get_users_request.js"></script>
+</html>

@@ -97,7 +97,20 @@ button {
 #display_quiz {
     background-color:#ffb366;
     width: 500px;
-    height: 600px;
+    height: 1000px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 100px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+    float: left;
+    margin-left: 50px;
+}
+
+#display_students {
+    background-color:#ffb366;
+    width: 500px;
+    height: 1000px;
     text-align: center;
     padding-top: 20px;
     margin-top: 100px;

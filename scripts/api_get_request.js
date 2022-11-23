@@ -20,6 +20,7 @@
     $("#display_quiz").append("<p> B: " + question.b + "</p>");
     $("#display_quiz").append("<p> C: " + question.c + "</p>");
     $("#display_quiz").append("<p> D: " + question.d + "</p>");
+    $("#display_quiz").append("<hr>");
   }
 
 

@@ -18,7 +18,7 @@ document.addEventListener("click", function (event) {
                     'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
 
         const options = {
-        method: 'POST',
+        method: 'PUT',
         headers: headers,
         body: JSON.stringify(created_question),
         };
@@ -45,7 +45,6 @@ document.addEventListener("click", function (event) {
     $("#display_quiz").append("<p>" + b + "</p>");
     $("#display_quiz").append("<p>" + c + "</p>");
     $("#display_quiz").append("<p>" + d + "</p>");
-    $("#display_quiz").append("<hr>");
   }
 
   
