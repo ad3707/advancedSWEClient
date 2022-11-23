@@ -28,6 +28,8 @@
 
 </div>
 
+
+
 <form id = "create">
   <h2> Add Student</h2>
 <label for="user_name">Name:</label><br>
@@ -74,6 +76,27 @@
   </div>
 </form>
 
+<div id = "container_show">
+  <h2> Leaderboard </h2>
+  
+  <form id = "leaderboard">
+    <label for="topK">Retrieve top k students </label><br>
+    <input type="text" id="topK" name="topK"><br>
+  
+    <div class="row3">
+      <div class="buttons">
+        <button class = "button" id = "leaderboard_button" type="leaderboard_button"> View leaderboard </button>
+    </div>
+  </div>
+  </form>
+  
+  <div id = "display_leaderboard">
+
+  </div>
+
+</div>
+
+
 
 
 </body>
@@ -81,5 +104,6 @@
 <script type="text/javascript" src="/scripts/api_post_user_request.js"></script>
 <script type="text/javascript" src="/scripts/api_update_user_request.js"></script>
 <script type="text/javascript" src="/scripts/api_delete_user_request.js"></script>
+<script type="text/javascript" src="/scripts/api_leaderboard.js"></script>
 
 </html>

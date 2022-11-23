@@ -94,6 +94,18 @@ button {
     margin-right: 200px;
 }
 
+#leaderboard {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 100px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+    float: right;
+    margin-right: 200px;
+}
+
 
 #create {
     background-color:#ffb366;
