@@ -17,9 +17,11 @@
     </div>
 </div>
 
-<div id = "display_students">
+<div id = "container_show">
     <h2> All Students </h2>
+    <div id = "display_students">
 
+    </div>
     <div class="buttons">
       <button class = "button" id= "get_all_users_button" type="get_all_users_button"> See All Students </button>
   </div>
@@ -42,22 +44,20 @@
 </div>
 </form>
 
-
-
 <form id = "update">
     <h2> Update Student</h2>
-  <label for="user_id">Student ID:</label><br>
-  <input type="text" id="user_id" name="user_id"><br>
-  <label for="user_name">Name:</label><br>
-  <input type="text" id="user_name" name="user_name"><br>
-  <label for="attempted">Attempted:</label><br>
-  <input type="text" id="attempted" name="attempted"><br>
-  <label for="correct">Correct:</label><br>
-  <input type="text" id="correct" name="correct"><br>
+  <label for="user_id1">Student ID:</label><br>
+  <input type="text" id="user_id1" name="user_id1"><br>
+  <label for="user_name1">Name:</label><br>
+  <input type="text" id="user_name1" name="user_name1"><br>
+  <label for="attempted1">Attempted:</label><br>
+  <input type="text" id="attempted1" name="attempted1"><br>
+  <label for="correct1">Correct:</label><br>
+  <input type="text" id="correct1" name="correct1"><br>
 
   <div class="row3">
     <div class="buttons">
-        <button class = "button" type="get_all_users_button"> Update </button>
+        <button class = "button" id = "update_user_button" type="update_user_button"> Update</button>
     </div>
 </div>
 </form>
@@ -69,7 +69,7 @@
   
     <div class="row3">
       <div class="buttons">
-        <button class = "button" type="get_all_users_button"> Delete </button>
+        <button class = "button" type="delete_user_button"> Delete </button>
     </div>
   </div>
 </form>
@@ -81,5 +81,6 @@
 </body>
 <script type="text/javascript" src="/scripts/api_get_users_request.js"></script>
 <script type="text/javascript" src="/scripts/api_post_user_request.js"></script>
+<script type="text/javascript" src="/scripts/api_update_user_request.js"></script>
 
 </html>

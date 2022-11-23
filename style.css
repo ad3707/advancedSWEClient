@@ -121,7 +121,8 @@ button {
     margin-left: 50px;
 }
 
-#display_students {
+
+#container_show {
     background-color:#ffb366;
     width: 500px;
     height: 1000px;
