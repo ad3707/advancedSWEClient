@@ -29,6 +29,8 @@ document.addEventListener("click", function (event) {
     .then(data => {
       console.log(data);
       })
+
+      $('#update').get(0).reset();
   });
 
   

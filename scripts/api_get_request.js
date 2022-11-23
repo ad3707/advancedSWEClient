@@ -9,6 +9,7 @@
   
   
   function renderAllQuestions(data) {
+    $('#display_quiz').empty();
     for (question in data) {
       display(data[question]);
     }
@@ -20,6 +21,7 @@
     $("#display_quiz").append("<p> B: " + question.b + "</p>");
     $("#display_quiz").append("<p> C: " + question.c + "</p>");
     $("#display_quiz").append("<p> D: " + question.d + "</p>");
+    $("#display_quiz").append("<p> Question ID: " + question.id + "</p>");
     $("#display_quiz").append("<hr>");
   }
 

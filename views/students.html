@@ -64,17 +64,15 @@
 
 <form id = "delete">
     <h2> Delete Student </h2>
-    <label for="user_id">Student ID:</label><br>
-    <input type="text" id="user_id" name="user_id"><br>
+    <label for="user_idDelete">Student ID:</label><br>
+    <input type="text" id="user_idDelete" name="user_idDelete"><br>
   
     <div class="row3">
       <div class="buttons">
-        <button class = "button" type="delete_user_button"> Delete </button>
+        <button class = "button" id = "delete_user_button" type="delete_user_button"> Delete </button>
     </div>
   </div>
 </form>
-
-
 
 
 
@@ -82,5 +80,6 @@
 <script type="text/javascript" src="/scripts/api_get_users_request.js"></script>
 <script type="text/javascript" src="/scripts/api_post_user_request.js"></script>
 <script type="text/javascript" src="/scripts/api_update_user_request.js"></script>
+<script type="text/javascript" src="/scripts/api_delete_user_request.js"></script>
 
 </html>

@@ -17,9 +17,11 @@
     </div>
 </div>
 
-<div id = "display_quiz">
+<div id = "container_show">
     <h2> Quiz </h2>
+    <div id = "display_quiz">
 
+    </div>
     <div class="buttons">
       <button class = "button" id= "get_all_questions_button" type="get_all_questions_button"> See Questions </button>
   </div>
@@ -52,8 +54,8 @@
 
 <form id = "delete">
     <h2> Delete Question </h2>
-    <label for="question_id">Question ID:</label><br>
-    <input type="text" id="question_id" name="question_id"><br>
+    <label for="question_idDelete">Question ID:</label><br>
+    <input type="text" id="question_idDelete" name="question_idDelete"><br>
   
     <div class="row3">
       <div class="buttons">
@@ -67,5 +69,6 @@
 </body>
 <script type="text/javascript" src="/scripts/api_get_request.js"></script>
 <script type="text/javascript" src="/scripts/api_update_request.js"></script>
+<script type="text/javascript" src="/scripts/api_delete_question_request.js"></script>
 
 </html>
