@@ -17,17 +17,6 @@
     </div>
 </div>
 
-<div id = "container_show">
-    <h2> All Students </h2>
-    <div id = "display_students">
-
-    </div>
-    <div class="buttons">
-      <button class = "button" id= "get_all_users_button" type="get_all_users_button"> See All Students </button>
-  </div>
-
-</div>
-
 
 
 <form id = "create">
@@ -45,6 +34,26 @@
   </div>
 </div>
 </form>
+
+<div id = "leaderboard_show">
+  <h2> Leaderboard </h2>
+  
+  <form id = "leaderboard">
+    <label for="topK">Retrieve top k students </label><br>
+    <input type="text" id="topK" name="topK"><br>
+  
+    <div class="row3">
+      <div class="buttons">
+        <button class = "button" id = "leaderboard_button" type="leaderboard_button"> View leaderboard </button>
+    </div>
+  </div>
+  </form>
+  
+  <div id ="display_leaderboard">
+
+  </div>
+
+</div>
 
 <form id = "update">
     <h2> Update Student</h2>
@@ -76,25 +85,24 @@
   </div>
 </form>
 
+
+
 <div id = "container_show">
-  <h2> Leaderboard </h2>
-  
-  <form id = "leaderboard">
-    <label for="topK">Retrieve top k students </label><br>
-    <input type="text" id="topK" name="topK"><br>
-  
-    <div class="row3">
-      <div class="buttons">
-        <button class = "button" id = "leaderboard_button" type="leaderboard_button"> View leaderboard </button>
-    </div>
-  </div>
-  </form>
-  
-  <div id = "display_leaderboard">
+  <h2> All Students </h2>
+  <div id = "display_students">
 
   </div>
+  <div class="buttons">
+    <button class = "button" id= "get_all_users_button" type="get_all_users_button"> See All Students </button>
+</div>
 
 </div>
+
+
+
+
+
+
 
 
 

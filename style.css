@@ -20,7 +20,7 @@ body {
 
 
 button {
-    background-color: #cc6600;
+    background-color: #005884;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -43,8 +43,8 @@ button {
 }
 
 #form {
-    background-color:#ffb366;
-    width: 400px;
+    background-color:#94E0FF;
+    width: 300px;
     height: 400px;
     text-align: center;
     padding-top: 50px;
@@ -55,21 +55,22 @@ button {
 }
 
 #quiz {
-    background-color:#ffb366;
+    background-color:#DCDEDF;
     width: 400px;
-    height: 500px;
+    height: 400px;
     text-align: center;
     padding-top: 20px;
-    margin-top: 100px;
+    margin-top: 150px;
     font-family: Verdana, sans-serif;
     border-radius: 20px;
     float: right;
     margin-right: 200px;
 }
 
+
 #delete {
-    background-color:#ffb366;
-    width: 400px;
+    background-color:#94E0FF;
+    width: 300px;
     height: 250px;
     text-align: center;
     padding-top: 20px;
@@ -78,60 +79,121 @@ button {
     border-radius: 20px;
     float: left;
     margin-right: 200px;
+    margin-top: -100px;
 }
 
-
-#update {
-    background-color:#ffb366;
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    padding-top: 20px;
-    margin-top: 100px;
-    font-family: Verdana, sans-serif;
-    border-radius: 20px;
-    float: right;
-    margin-right: 200px;
-}
-
-#leaderboard {
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    padding-top: 20px;
-    margin-top: 100px;
-    font-family: Verdana, sans-serif;
-    border-radius: 20px;
-    float: right;
-    margin-right: 200px;
-}
-
-
-#create {
-    background-color:#ffb366;
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    padding-top: 20px;
-    margin-top: 100px;
-    font-family: Verdana, sans-serif;
-    border-radius: 20px;
-    float: right;
-    margin-right: 200px;
-}
-
-
-#container_show {
-    background-color:#ffb366;
-    width: 500px;
-    height: 2000px;
+#delete_quiz {
+    background-color:#DCDEDF;
+    width: 300px;
+    height: 250px;
     text-align: center;
     padding-top: 20px;
     margin-top: 100px;
     font-family: Verdana, sans-serif;
     border-radius: 20px;
     float: left;
-    margin-left: 50px;
+    margin-right: 100px;
+}
+
+
+
+#update {
+    background-color:#94E0FF;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, sans-serif;
+    float:left;
+    border-radius: 20px;
+    margin-right: 200px;
+    margin-top: -600px;
+}
+
+#update_quiz {
+    background-color:#94E0FF;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, sans-serif;
+    float:left;
+    border-radius: 20px;
+    margin: 0px 100px 0px 50px;
+}
+
+
+#leaderboard {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+}
+
+#display_leaderboard {
+   margin-top:-200px;
+}
+
+#create {
+    background-color:#94E0FF;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+    float: left;
+    margin-right: 200px;
+}
+
+#create_quiz {
+    background-color:#94E0FF;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+    float: left;
+    margin: 0px 500px 100px 50px;
+}
+
+#container_show {
+    background-color:#B6DDFF;
+    width: 400px;
+    height: 2000px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+    float: right;
+    margin: -1220px 50px 0px 500px;
+}
+
+#container_show_quiz {
+    background-color:#B6DDFF;
+    width: 500px;
+    height: 2000px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+    float: right;
+    margin: -1150px 50px 0px 500px;
+}
+
+#leaderboard_show {
+    background-color:#DCF5FF;
+    width: 400px;
+    height: 1000px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 100px;
+    font-family: Verdana, sans-serif;
+    border-radius: 20px;
+    margin-left: 500px;
 }
 
 #label_form {
@@ -139,7 +201,7 @@ button {
 }
 
 .profile_container {
-    background-color: #ffb366;
+    background-color: #B6DDFF;
     border-radius: 10px;
     width: 300px;
     height: 300px;
@@ -151,7 +213,7 @@ button {
 }
 
 .exams_container {
-    background-color: #ffb366;
+    background-color: #B6DDFF;
     border-radius: 10px;
     width: 300px;
     height: 300px;
@@ -163,7 +225,7 @@ button {
 }
 
 .assignments_container {
-    background-color: #ffb366;
+    background-color: #B6DDFF;
     border-radius: 10px;
     width: 300px;
     height: 300px;

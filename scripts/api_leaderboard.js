@@ -12,11 +12,11 @@
   function renderTopUsers(data) {
     $('#display_leaderboard').empty();
     for (user in data) {
-      display(data[user]);
+      displayLeaderboard(data[user]);
     }
   }
 
-  function display(user) {
+  function displayLeaderboard(user) {
     $("#display_leaderboard").append("<p> <b> " + user.name +  "</b> </p>");
     $("#display_leaderboard").append("<p> Student ID: " + user.id +  " </p>");
     $("#display_leaderboard").append("<p> Score: " + Math.round((user.percentCorrect) * 100) + "% </p>");

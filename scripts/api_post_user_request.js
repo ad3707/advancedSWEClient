@@ -21,7 +21,6 @@ document.addEventListener("click", function (event) {
 
     fetch('http://localhost:8080/users', options)
     .then((response) => response.json())
-    .then((data) => renderQuestion(data))
     .then(data => {
       console.log(data);
       })
