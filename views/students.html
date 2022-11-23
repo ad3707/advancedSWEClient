@@ -26,6 +26,24 @@
 
 </div>
 
+<form id = "create">
+  <h2> Add Student</h2>
+<label for="user_name">Name:</label><br>
+<input type="text" id="user_name" name="user_name"><br>
+<label for="attempted">Attempted:</label><br>
+<input type="text" id="attempted" name="attempted"><br>
+<label for="correct">Correct:</label><br>
+<input type="text" id="correct" name="correct"><br>
+
+<div class="row3">
+  <div class="buttons">
+      <button class = "button" id = "create_user_button" type="create_user_button"> Add </button>
+  </div>
+</div>
+</form>
+
+
+
 <form id = "update">
     <h2> Update Student</h2>
   <label for="user_id">Student ID:</label><br>
@@ -58,6 +76,10 @@
 
 
 
+
+
 </body>
 <script type="text/javascript" src="/scripts/api_get_users_request.js"></script>
+<script type="text/javascript" src="/scripts/api_post_user_request.js"></script>
+
 </html>
