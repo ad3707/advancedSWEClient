@@ -6,7 +6,7 @@
 <body>
 
 <ul>
-    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="dashboard.html">Dashboard </a></li>
     <li><a href="students.html"> Class Info </a></li>
     <li><a href="create_quiz.html"> Create Quiz </a></li>
 </ul>
@@ -17,64 +17,68 @@
     </div>
 </div>
 
-<form id = "create_quiz">
-  <h2> Add Question </h2>
-  <label for="question_name">Question:</label><br>
-  <input type="text" id="question_name" name="question_name"><br>
-  <label for="ans1">Choice A:</label><br>
-  <input type="text" id="ans1" name="ans1"><br>
-  <label for="ans2">Choice B:</label><br>
-  <input type="text" id="ans2" name="ans2"><br>
-  <label for="ans3">Choice C:</label><br>
-  <input type="text" id="ans3" name="ans3"><br>
-  <label for="ans4">Choice D:</label><br>
-  <input type="text" id="ans4" name="ans4"><br>
-  <label for="answer">Correct Answer:</label><br>
-  <input type="text" id="answer" name="answer"><br>
-
+<div id = create_quiz>
+  <form id = "create_form">
+    <h2> Add Question </h2>
+    <label for="question_name">Question:</label><br>
+    <input type="text" id="question_name" name="question_name" required><br>
+    <label for="ans1">Choice A:</label><br>
+    <input type="text" id="ans1" name="ans1" required><br>
+    <label for="ans2">Choice B:</label><br>
+    <input type="text" id="ans2" name="ans2" required><br>
+    <label for="ans3">Choice C:</label><br>
+    <input type="text" id="ans3" name="ans3" required><br>
+    <label for="ans4">Choice D:</label><br>
+    <input type="text" id="ans4" name="ans4" required><br>
+    <label for="answer">Correct Answer:</label><br>
+    <input type="text" id="answer" name="answer" required><br>
+  </form>
   <div class="row3">
     <div class="buttons">
         <button class = "button" id = "create_question_button" type="create_question_button"> Submit question </button>
     </div>
+  </div>
 </div>
 
-</form>
 
-<form id = "update_quiz">
-    <h2> Update Question</h2>
-  <label for="question_id">Question ID:</label><br>
-  <input type="text" id="question_id" name="question_id"><br>
-  <label for="question_name">Question:</label><br>
-  <input type="text" id="question_name" name="question_name"><br>
-  <label for="ans1">Choice A:</label><br>
-  <input type="text" id="ans1" name="ans1"><br>
-  <label for="ans2">Choice B:</label><br>
-  <input type="text" id="ans2" name="ans2"><br>
-  <label for="ans3">Choice C:</label><br>
-  <input type="text" id="ans3" name="ans3"><br>
-  <label for="ans4">Choice D:</label><br>
-  <input type="text" id="ans4" name="ans4"><br>
-  <label for="answer">Correct Answer:</label><br>
-  <input type="text" id="answer" name="answer"><br>
 
+<div id = update_quiz>
+  <form id = "update_form">
+      <h2> Update Question</h2>
+    <label for="question_idUpdate">Question ID:</label><br>
+    <input type="text" id="question_idUpdate" name="question_idUpdate" required><br>
+    <label for="question_nameUpdate">Question:</label><br>
+    <input type="text" id="question_nameUpdate" name="question_nameUpdate" required><br>
+    <label for="ans1Update">Choice A:</label><br>
+    <input type="text" id="ans1Update" name="ans1Update" required><br>
+    <label for="ans2Update">Choice B:</label><br>
+    <input type="text" id="ans2Update" name="ans2Update" required><br>
+    <label for="ans3Update">Choice C:</label><br>
+    <input type="text" id="ans3Update" name="ans3Update" required><br>
+    <label for="ans4Update">Choice D:</label><br>
+    <input type="text" id="ans4Update" name="ans4Update" required><br>
+    <label for="answerUpdate">Correct Answer:</label><br>
+    <input type="text" id="answerUpdate" name="answerUpdate" required><br>
+  </form>
   <div class="row3">
     <div class="buttons">
         <button class = "button" id = "update_question_button" type="update_question_button"> Update </button>
     </div>
+  </div>
 </div>
-</form>
 
-<form id = "delete_quiz">
+<div id = "delete_quiz">
+  <form id = "delete_form">
     <h2> Delete Question </h2>
     <label for="question_idDelete">Question ID:</label><br>
-    <input type="text" id="question_idDelete" name="question_idDelete"><br>
-  
+    <input type="text" id="question_idDelete" name="question_idDelete" required><br>
+  </form>
     <div class="row3">
       <div class="buttons">
         <button class = "button" id = "delete_question_button" type="delete_question_button"> Delete </button>
     </div>
   </div>
-</form>
+</div>
 
 <div id = "container_show_quiz">
   <h2> Quiz </h2>

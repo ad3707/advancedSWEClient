@@ -2,10 +2,10 @@
   document.addEventListener("click", function (event) {
     if (!event.target.matches("#leaderboard_button")) return;
     const k = document.getElementById("topK").value; 
-    console.log(k);
     fetch('http://localhost:8080/leaderboard/' + k)
       .then((response) => response.json())
       .then((data) => renderTopUsers(data))
+      console.log(data);
   });
   
   

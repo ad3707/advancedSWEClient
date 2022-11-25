@@ -1,6 +1,5 @@
 //POST REQUEST FOR UPDATING USER
 document.addEventListener("click", function (event) {
-    event.preventDefault();
 
     if (!event.target.matches("#delete_user_button")) return;
     const deleted_user = {
@@ -24,7 +23,7 @@ document.addEventListener("click", function (event) {
       console.log(data);
       })
 
-    $('#delete').get(0).reset();
+    $('#delete_form').get(0).reset();
   });
 
   

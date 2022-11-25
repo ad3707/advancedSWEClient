@@ -1,6 +1,5 @@
 //POST REQUEST FOR UPDATING QUESTION
 document.addEventListener("click", function (event) {
-    event.preventDefault();
 
     if (!event.target.matches("#delete_question_button")) return;
     const deleted_question = {
@@ -24,7 +23,7 @@ document.addEventListener("click", function (event) {
       console.log(data);
       })
 
-      $('#delete').get(0).reset();
+      $('#delete_form').get(0).reset();
   });
 
   

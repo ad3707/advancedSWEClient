@@ -1,7 +1,6 @@
 
 //POST REQUEST FOR ADDING QUESTION
 document.addEventListener("click", function (event) {
-    event.preventDefault();
 
     if (!event.target.matches("#create_question_button")) return;
     const created_question = {

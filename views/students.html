@@ -2,108 +2,105 @@
 <link rel="stylesheet" type="text/css" href="/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-
 <body>
 
-<ul>
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="students.html"> Class Info </a></li>
-    <li><a href="create_quiz.html"> Create Quiz </a></li>
-</ul>
-    
+  <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="students.html"> Class Info </a></li>
+      <li><a href="create_quiz.html"> Create Quiz </a></li>
+  </ul>
+      
 
-<div class="row">
-    <div class="col-12 header">
-    </div>
-</div>
-
-
-
-<form id = "create">
-  <h2> Add Student</h2>
-<label for="user_name">Name:</label><br>
-<input type="text" id="user_name" name="user_name"><br>
-<label for="attempted">Attempted:</label><br>
-<input type="text" id="attempted" name="attempted"><br>
-<label for="correct">Correct:</label><br>
-<input type="text" id="correct" name="correct"><br>
-
-<div class="row3">
-  <div class="buttons">
-      <button class = "button" id = "create_user_button" type="create_user_button"> Add </button>
+  <div class="row">
+      <div class="col-12 header">
+      </div>
   </div>
-</div>
-</form>
 
-<div id = "leaderboard_show">
-  <h2> Leaderboard </h2>
-  
-  <form id = "leaderboard">
-    <label for="topK">Retrieve top k students </label><br>
-    <input type="text" id="topK" name="topK"><br>
-  
+
+  <div id = "create">
+    <form id = "create_form">
+      <h2> Add Student</h2>
+      <label for="user_name">Name:</label><br>
+      <input type="text" id="user_name" name="user_name" required><br>
+      <label for="attempted">Attempted:</label><br>
+      <input type="text" id="attempted" name="attempted" required><br>
+      <label for="correct">Correct:</label><br>
+      <input type="text" id="correct" name="correct" required><br>
+    </form>
+
     <div class="row3">
       <div class="buttons">
-        <button class = "button" id = "leaderboard_button" type="leaderboard_button"> View leaderboard </button>
+          <button class = "button" id = "create_user_button" type="create_user_button"> Add </button>
+      </div>
     </div>
   </div>
-  </form>
-  
-  <div id ="display_leaderboard">
 
+
+
+  <div id = "leaderboard_show">
+    <h2> Leaderboard </h2>
+    
+    <form id = "leaderboard">
+      <label for="topK">Retrieve top k students </label><br>
+      <input type="text" id="topK" name="topK"><br>
+    </form>
+
+    <div class="row3">
+      <div class="buttons">
+        <button class = "leader button" id = "leaderboard_button" type="leaderboard_button"> View leaderboard </button>
+      </div>
+      <div id ="display_leaderboard">
+      
+      </div>
+    </div>
   </div>
 
-</div>
 
-<form id = "update">
-    <h2> Update Student</h2>
-  <label for="user_id1">Student ID:</label><br>
-  <input type="text" id="user_id1" name="user_id1"><br>
-  <label for="user_name1">Name:</label><br>
-  <input type="text" id="user_name1" name="user_name1"><br>
-  <label for="attempted1">Attempted:</label><br>
-  <input type="text" id="attempted1" name="attempted1"><br>
-  <label for="correct1">Correct:</label><br>
-  <input type="text" id="correct1" name="correct1"><br>
-
-  <div class="row3">
-    <div class="buttons">
-        <button class = "button" id = "update_user_button" type="update_user_button"> Update</button>
+  <div id = "update">
+    <form id = "update_form">
+        <h2> Update Student</h2>
+      <label for="user_idUpdate">Student ID:</label><br>
+      <input type="text" id="user_idUpdate" name="user_idUpdate" required><br>
+      <label for="user_nameUpdate">Name:</label><br>
+      <input type="text" id="user_nameUpdate" name="user_nameUpdate" required><br>
+      <label for="attemptedUpdate">Attempted:</label><br>
+      <input type="text" id="attemptedUpdate" name="attemptedUpdate" required><br>
+      <label for="correctUpdate">Correct:</label><br>
+      <input type="text" id="correctUpdate" name="correctUpdate" required><br>
+    </form>
+    <div class="row3">
+      <div class="buttons">
+          <button class = "button" id = "update_user_button" type="update_user_button"> Update</button>
+      </div>
     </div>
-</div>
-</form>
+  </div>
 
-<form id = "delete">
-    <h2> Delete Student </h2>
-    <label for="user_idDelete">Student ID:</label><br>
-    <input type="text" id="user_idDelete" name="user_idDelete"><br>
-  
+  <div id = "delete">
+    <form id = "delete_form">
+        <h2> Delete Student </h2>
+        <label for="user_idDelete">Student ID:</label><br>
+        <input type="text" id="user_idDelete" name="user_idDelete"><br>
+    </form>
+      
     <div class="row3">
       <div class="buttons">
         <button class = "button" id = "delete_user_button" type="delete_user_button"> Delete </button>
+      </div>
     </div>
   </div>
-</form>
 
 
 
-<div id = "container_show">
-  <h2> All Students </h2>
-  <div id = "display_students">
+  <div id = "container_show">
+    <h2> All Students </h2>
+    <div id = "display_students">
+
+    </div>
+    <div class="buttons">
+      <button class = "button" id= "get_all_users_button" type="get_all_users_button"> See All Students </button>
+    </div>
 
   </div>
-  <div class="buttons">
-    <button class = "button" id= "get_all_users_button" type="get_all_users_button"> See All Students </button>
-</div>
-
-</div>
-
-
-
-
-
-
-
 
 
 

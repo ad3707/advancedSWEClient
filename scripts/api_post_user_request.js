@@ -1,6 +1,5 @@
 //POST REQUEST FOR ADDING USER
 document.addEventListener("click", function (event) {
-    event.preventDefault();
 
     if (!event.target.matches("#create_user_button")) return;
     const created_user = {
@@ -24,6 +23,7 @@ document.addEventListener("click", function (event) {
     .then(data => {
       console.log(data);
       })
+      $('#create_form').get(0).reset();
   });
   
  
