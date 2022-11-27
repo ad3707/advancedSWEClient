@@ -29,6 +29,7 @@ document.addEventListener("click", function (event) {
       console.log(data);
       //  return data.json();
       })
+      $('#create_form').get(0).reset();
   });
   
   function renderQuestion(data) {
