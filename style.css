@@ -2,6 +2,11 @@ body {
     background-color:white;
 }
 
+#container {
+    margin: auto auto;
+    width: 1350px;
+}
+
 .title {
     font-size: 150px;
     text-align: center;
